@@ -11,3 +11,4 @@ else :
     print("ERROR")
 
 
+input("press ENTER to exit")
