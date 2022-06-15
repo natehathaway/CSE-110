@@ -8,14 +8,16 @@ number = int(input("Enter a number: "))
 while number != 0:
     number_list.append(number)
     number = int(input("Enter a number: "))
-if number >= 1000:
-    print("Wow! You love big numbers!")
+    
 print("The sum is:", sum(number_list))
 print("The average is:", sum(number_list) / len(number_list))
 print("The largest number is:", max(number_list))
+
 print("The smallest positive number is:", min([i for i in number_list if i > 0]))
+
 sorted_list = sorted(number_list)
 print("The sorted list is:")
+
 for number in sorted_list:
     print(number)
 

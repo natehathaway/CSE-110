@@ -32,18 +32,20 @@ while play:
         break
 
     #Checks guess word against secret word
-    for i in range(len(guess)):
+    for i,letter in enumerate(guess):
         #if lettter is correct and correct place
-        if enumerate(guess[i]) == enumerate(secret_word[i]):
-            word[i] = secret_word[i].upper()
+        if letter == secret_word[i]:
+            print(letter.upper(), end=" ")
           
         #If letter is correct but in wrong place
         elif guess.lower()[i] in secret_word:
-            word[i] = guess[i].lower()
+            print(letter.lower(), end=" ")
+
+    #If letter is not in word
+        else:
+            print("_", end=" ")
           
-    #Prints the word in it's current state.
-    for letter in word:
-        print(letter, end=" ")
+    
     print()
     # Prints congratulations message after win condition.
     if guess == secret_word:
