@@ -2,13 +2,13 @@
 
 #Welcome to the word guessing game!
 
-
+import random
 from ast import While
 from itertools import count
 
 
 #variables
-secret_word = "nuggets"
+secret_word = random.choice(['apple', 'banana', 'orange', 'coconut', 'strawberry', 'lime', 'grapefruit', 'kiwi', 'blueberry', 'melon'])
 word = []
 play = True
 
