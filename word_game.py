@@ -53,3 +53,6 @@ while play:
         print("It took you", count, "guesses.")
         break
 print("Thanks for playing!")
+
+
+input("press enter to exit")
